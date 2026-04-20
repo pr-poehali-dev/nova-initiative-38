@@ -6,9 +6,17 @@ export function IntegrationSection() {
   return (
     <section
       ref={ref}
-      className="flex h-screen w-screen shrink-0 snap-start items-center px-6 pt-20 md:px-12 md:pt-0 lg:px-16"
+      className="relative flex h-screen w-screen shrink-0 snap-start items-center px-6 pt-20 md:px-12 md:pt-0 lg:px-16 overflow-hidden"
+      style={{
+        backgroundImage: "url(https://cdn.poehali.dev/projects/932a567d-7f53-4cc1-baff-cf27137be611/bucket/808cf416-5b95-421c-a31b-d3fa524c0aac.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      <div className="mx-auto w-full max-w-7xl">
+      {/* тёмный оверлей */}
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
+
+      <div className="relative mx-auto w-full max-w-7xl">
         <div
           className={`mb-10 transition-all duration-700 ${
             isVisible ? "translate-y-0 opacity-100" : "-translate-y-12 opacity-0"
