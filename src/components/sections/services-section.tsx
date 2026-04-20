@@ -17,29 +17,29 @@ export function ServicesSection() {
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Услуги
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Всё для вашего автопарка</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "1С: Путевые листы",
+              description: "Автоматизация учёта путевых листов, интеграция с 1С Бухгалтерией и 1С:Зарплата. Экономия времени и исключение ошибок.",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Спутниковый мониторинг",
+              description: "Системы ГЛОНАСС/GPS: ГЛОНАССофт, Автограф. Онлайн-контроль местоположения, маршрутов и поведения водителей.",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Тахографы и топливо",
+              description: "Установка и обслуживание тахографов, монтаж и тарировка датчиков уровня топлива, установка топливозаправочных станций.",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "Измерение полей",
+              description: "Точное измерение площадей сельскохозяйственных полей с помощью спутниковых технологий. Интеграция с агро-системами.",
               direction: "bottom",
             },
           ].map((service, i) => (
